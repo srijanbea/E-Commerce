@@ -1,5 +1,5 @@
 
-$("#usa-vectormap").vectorMap({
+Rs.("#usa-vectormap").vectorMap({
     map: "us_lcc",
     backgroundColor: "#F2F7FB",
     regionStyle: {

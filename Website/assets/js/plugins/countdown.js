@@ -7,10 +7,10 @@ const countdown = function(_config) {
   let tarTime = _config.target.dataset.time;
   let tarhour, tarmin;
 
-  const $day = _config.target.querySelector('.day .countdown-num')
-  const $hour = _config.target.querySelector('.hour .countdown-num')
-  const $min = _config.target.querySelector('.min .countdown-num')
-  const $sec = _config.target.querySelector('.sec .countdown-num')
+  const Rs.day = _config.target.querySelector('.day .countdown-num')
+  const Rs.hour = _config.target.querySelector('.hour .countdown-num')
+  const Rs.min = _config.target.querySelector('.min .countdown-num')
+  const Rs.sec = _config.target.querySelector('.sec .countdown-num')
 
   if (tarTime != null) {
     tarTime = tarTime.split(':');
@@ -36,10 +36,10 @@ const countdown = function(_config) {
 
     requestAnimationFrame(updateTime);
 
-    if ($day) $day.innerHTML = addZero(days);
-    if ($hour) $hour.innerHTML = addZero(hours);
-    if ($min) $min.innerHTML = addZero(minutes);
-    if ($sec) $sec.innerHTML = addZero(seconds);
+    if (Rs.day) Rs.day.innerHTML = addZero(days);
+    if (Rs.hour) Rs.hour.innerHTML = addZero(hours);
+    if (Rs.min) Rs.min.innerHTML = addZero(minutes);
+    if (Rs.sec) Rs.sec.innerHTML = addZero(seconds);
 
     // If the count down is over, write some text
     if (distance < 0) {
